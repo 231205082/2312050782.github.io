@@ -1,0 +1,130 @@
+/*背景画像*/
+.title {
+    height: 310px;
+    background-image: url(../images/concept/bg-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #4b2c14;
+}
+
+/*見出し*/
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/*サブタイトル*/
+.title p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/*コンセプトエリア（幅と最大幅、上下/左右の表示位置）*/
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 930px;
+    max-width: 90%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+}
+
+/*テキストエリア*/
+.feature-text {
+    max-width: 500px;
+    margin-right: 40px;
+}
+
+/*2つ目のエリアを左右反転*/
+/*reverseクラスを左右反転*/
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/*左右の余白を反転*/
+.reverse .feature-text {
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+/*中見出しのスタイル（feature-textクラスにのみ反映）*/
+.feature-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+/*見出しの下に短い下線*/
+.feature-text h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+/*コンセプト文のスタイル（feature-textクラスにのみ反映）*/
+.feature-text p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+
+/*動画エリアのスタイル*/
+.movie {
+    width: 930px;
+    max-width: 90%;
+    background-color: #f8f8f8;
+    padding: 50px 60px;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*動画エリアの見出しのスタイル*/
+.movie h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*見出しの下に短い下線*/
+.movie h2::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 20px;
+}
+
+/*動画の大きさと上部の余白*/
+.movie iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    margin-top: 30px;
+}
+
+/*動画説明文のスタイル*/
+.movie p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+/*フッターの上部に余白*/
+.footer {
+    margin-top: 100px;
+}
